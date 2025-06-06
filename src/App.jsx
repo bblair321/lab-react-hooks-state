@@ -10,6 +10,13 @@ const App = () => {
 
   // TODO: Implement state for category filtering
 
+  const [products] = useState([
+    { id: 1, name: 'Apple', price: 0.99, inStock: true, category: 'Fruits' },
+    { id: 2, name: 'Banana', price: 0.79, inStock: false, category: 'Fruits' },
+    { id: 3, name: 'Milk', price: 2.49, inStock: true, category: 'Dairy' },
+    { id: 4, name: 'Cheese', price: 4.99, inStock: true, category: 'Dairy' },
+  ])
+
   return (
     <div>
       <h1>🛒 Shopping App</h1>
@@ -29,7 +36,7 @@ const App = () => {
       </select>
 
       {/* Display initial sample products */}
-      <ProductList />
+      <ProductList products={products}/>
 
       {/* TODO: Implement and render Cart component */}
     </div>

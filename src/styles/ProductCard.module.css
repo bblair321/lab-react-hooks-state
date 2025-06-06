@@ -1,5 +1,4 @@
-/* TODO: Style the product card container */
+.card {
+  transition: 0.3s ease;
+}
 
-/* TODO: Add special styling for out-of-stock products */
-
-/* TODO: Style the add/remove button */
